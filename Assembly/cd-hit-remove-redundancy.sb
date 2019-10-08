@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --time=0-10:00:00
+#SBATCH --mem=400G
+#SBATCH --ntasks=12
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=lswhiteh@email.unc.edu
+#SBATCH -J cdhitremoveredundancy
+#SBATCH -o cdhitremoveredundanc.%A.out
+#SBATCH -e cdhitremoveredundancy.%A.err
+
+source activate metagenomics
+
+cd /pine/scr/l/s/lswhiteh/p_line/LineP2015/2019_analysis/data
+
+cd-hit-est -i 2015_assembly.fasta -o clustered_2015_assembly.fa -c 0.99 -n 10 -d 100 -M 400000 -T 12
+

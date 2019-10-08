@@ -1,0 +1,35 @@
+#!/bin/bash
+
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --time=5:00:00
+#SBATCH --mem=200G
+#SBATCH --ntasks=24
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=lswhiteh@email.unc.edu
+#SBATCH -J kallisto
+#SBATCH -o kallisto2015.%A.out
+#SBATCH -e kallisto2015.%A.err
+
+
+
+source activate metagenomics
+
+cd /pine/scr/l/s/lswhiteh/p_line/LineP2015/2019_analysis/data/
+
+
+kallisto index -i 2015_index clustered_2015_assembly.fa
+kallisto quant -i 2015_index -t 24 -o 2015_quants/t0 \
+	./fastqs/Q0111_R1.fq ./fastqs/Q0111_R2.fq \
+
+kallisto quant -i 2015_index -t 24 -o 2015_quants/t96cntrl \
+	./fastqs/Q0121_R1.fq ./fastqs/Q0121_R2.fq \
+
+kallisto quant -i 2015_index -t 24 -o 2015_quants/t96fe \
+	./fastqs/Q0124_R1.fq ./fastqs/Q0124_R2.fq \
+
+kallisto quant -i 2015_index -t 24 -o 2015_quants/t96dfb \
+	./fastqs/Q0127_R1.fq ./fastqs/Q0127_R2.fq
+
+
+

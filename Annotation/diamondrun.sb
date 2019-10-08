@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#SBATCH -p general
+#SBATCH --nodes=1
+#SBATCH --time=0-24:00:00
+#SBATCH --mem=300G
+#SBATCH --ntasks=12
+#SBATCH --mail-type=BEGIN,END,FAIL
+#SBATCH --mail-user=lswhiteh@email.unc.edu
+#SBATCH -J diamond
+#SBATCH -o diamond.%A.out
+#SBATCH -e diamond.%A.err
+
+
+
+module load diamond
+
+cd /pine/scr/l/s/lswhiteh/p_line/LineP2015/2019_analysis/data/
+
+diamond blastx -d /pine/scr/l/s/lswhiteh/databases/phylodb/phylo.dmnd \
+	-q clustered_2015_assembly.fa -o 2015_clustered.m8 \
+	-p 12 -e 0.000001 -k 1
