@@ -17,7 +17,7 @@ git clone https://github.com/Lswhiteh/diatom-metatranscriptomics
 ```
 The structure will look as such:
 ```
-Eastern_larch/
+Diatom_workflow/
 ├── Raw_Reads
 ├── Quality_Control
 ├── Assembly
@@ -25,6 +25,8 @@ Eastern_larch/
 ├── Alignment
 └── DEA
 ```
+
+
 
 
 
