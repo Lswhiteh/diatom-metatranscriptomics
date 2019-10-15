@@ -55,7 +55,7 @@ Most (essentially all) programs have a help function or manual (man) page that y
 
 ## 2. Quality Control
 
-Using Trimmomatic to get rid of bad reads and trim adapters if necessary is straightfoward, and we can combine this with a tool called FastQC to get summary statistics about our reads. This creates "before" and "after" folders with FastQC reports in them. It then uses a tool called MultiQC to generate a thorough report of the quality information output by both Trimmomatic and FastQC. (It can also be used for Kallisto later on, if you're interested!)
+Using Trimmomatic to get rid of bad reads and trim adapters if necessary is straightfoward, and we can combine this with a tool called FastQC to get summary statistics about our reads. This creates "before" and "after" folders with FastQC reports in them. It then uses a tool called MultiQC to generate a thorough report of the quality information output by both Trimmomatic and FastQC. (It can also be used for Salmon later on, if you're interested.)
 
 ```
 #!/bin/bash
@@ -95,6 +95,8 @@ fastqc -t 8 --outdir ../data/after_trimming/
 ```
 
 I've read some recent papers suggesting that trimming adapters doesn't matter with a lot of reads nowadays, but it's traditionally a good way to go so I've included it commented out in case they're present in the sample. 
+
+After the fastqc and trimming has been done MultiQC
 
 
 
