@@ -99,7 +99,7 @@ I've read some recent papers suggesting that trimming adapters doesn't matter wi
 
 After the fastqc and trimming has been done MultiQC allows for an easy way to look at all samples in tandem.
 
-`multiqc <reports_dir>` looks through directories recursively and searches for the common strings among report files made by tools, then it compiles them into a nice clean set of graphs on an html page. Here's an example report of the data provided in this repo.
+`multiqc <reports_dir>` looks through directories recursively and searches for the common strings among report files made by tools, then it compiles them into a nice clean set of graphs on an html page. [Here's an example report](https://github.com/Lswhiteh/diatom-metatranscriptomics/blob/master/QC/multiqc_report.html) of the data provided in this repo.
 
 
 ## 3. Assembly
