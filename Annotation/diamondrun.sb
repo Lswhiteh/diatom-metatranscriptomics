@@ -11,12 +11,21 @@
 #SBATCH -o diamond.%A.out
 #SBATCH -e diamond.%A.err
 
-
-
 module load diamond
 
-cd /pine/scr/l/s/lswhiteh/p_line/LineP2015/2019_analysis/data/
+cd /pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Annotation
 
-diamond blastx -d /pine/scr/l/s/lswhiteh/databases/phylodb/phylo.dmnd \
-	-q clustered_2015_assembly.fa -o 2015_clustered.m8 \
+#Need to blast against phyloDB and KEGG
+
+#diamond makedb --in /proj/marchlab/data/phylodb/phylodb_1.076.pep.fa -d phylodb
+
+#diamond blastx -d /proj/marchlab/data/phylodb/diamond_db/phylodb \
+#	-q /pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Assembly/trinity_assembly/clustered_assembly.fa \
+#	-o clustered_assembly_phylo_annotation.m8 \
+#	-p 12 -e 0.000001 -k 1
+
+diamond makedb --in /nas/longleaf/data/KEGG/KEGG/genes/fasta/genes.pep.fasta -d keggdb
+diamond blastx -d keggdb \
+	-q ../Assembly/trinity_assembly/clustered_assembly.fa \
+	-o clustered_assembly_kegg_annotation.m8 \
 	-p 12 -e 0.000001 -k 1

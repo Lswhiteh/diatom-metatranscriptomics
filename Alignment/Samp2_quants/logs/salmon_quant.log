@@ -1,0 +1,42 @@
+[2019-10-16 13:32:17.722] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2019-10-16 13:32:17.722] [jointLog] [warning] 
+
+NOTE: It appears you are running salmon without the `--validateMappings` option.
+Mapping validation can generally improve both the sensitivity and specificity of mapping,
+with only a moderate increase in use of computational resources. 
+Mapping validation is planned to become a default option (i.e. turned on by default) in
+the next release of salmon.
+Unless there is a specific reason to do this (e.g. testing on clean simulated data),
+`--validateMappings` is generally recommended.
+
+[2019-10-16 13:32:17.722] [jointLog] [info] parsing read library format
+[2019-10-16 13:32:17.722] [jointLog] [info] There is 1 library.
+[2019-10-16 13:32:17.789] [jointLog] [info] Loading Quasi index
+[2019-10-16 13:32:17.789] [jointLog] [info] Loading 32-bit quasi index
+[2019-10-16 13:32:17.790] [jointLog] [info] done
+[2019-10-16 13:32:17.790] [jointLog] [info] Index contained 19 targets
+[2019-10-16 13:32:17.911] [fileLog] [info] 
+At end of round 0
+==================
+Observed 2500 total fragments (2500 in most recent round)
+
+[2019-10-16 13:32:17.910] [jointLog] [info] Computed 15 rich equivalence classes for further processing
+[2019-10-16 13:32:17.910] [jointLog] [info] Counted 43 total reads in the equivalence classes 
+[2019-10-16 13:32:17.920] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings : 0
+[2019-10-16 13:32:17.920] [jointLog] [warning] Only 43 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2019-10-16 13:32:17.920] [jointLog] [info] Mapping rate = 1.72%
+
+[2019-10-16 13:32:17.920] [jointLog] [info] finished quantifyLibrary()
+[2019-10-16 13:32:17.920] [jointLog] [info] Starting optimizer
+[2019-10-16 13:32:17.922] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2019-10-16 13:32:17.922] [jointLog] [info] iteration = 0 | max rel diff. = 1.26316
+[2019-10-16 13:32:17.923] [jointLog] [info] iteration = 100 | max rel diff. = 0
+[2019-10-16 13:32:17.924] [jointLog] [info] Finished optimizer
+[2019-10-16 13:32:17.924] [jointLog] [info] writing output 
+
+[2019-10-16 13:32:17.925] [jointLog] [warning] NOTE: Read Lib [[ ./Samp_2/sample_2_R1.fq, ./Samp_2/sample_2_R2.fq]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: ../Alignment/Samp2_quants/lib_format_counts.json for details
+

@@ -1,0 +1,10 @@
+{
+    "salmon_version": "0.14.0",
+    "libType": "A",
+    "index": "../Alignment/assemblyindex",
+    "mates1": "./Samp_1/sample_1_R1.fq",
+    "mates2": "./Samp_1/sample_1_R2.fq",
+    "threads": "24",
+    "output": "../Alignment/Samp1_quants",
+    "auxDir": "aux_info"
+}

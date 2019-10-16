@@ -1,0 +1,21 @@
+Statistics:
+===========
+Trinity Version:      Trinity-v2.8.5
+Compiler:             GCC
+Trinity Parameters:   --seqType fq --max_memory 500G --left /pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Reads/Samp_1/sample_1_R1.fq,/pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Reads/Samp_2/sample_2_R1.fq --right /pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Reads/Samp_1/sample_1_R2.fq,/pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Reads/Samp_2/sample_2_R2.fq --CPU 24 --output /pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Assembly/trinity_assembly
+Paired mode
+ Input data
+  Left.fasta    NA MByte
+  Right.fasta   NA MByte
+  Number of unique KMERs: 812251
+  Number of reads:        NA Output data
+  Trinity.fasta 0 MByte
+
+Runtime
+=======
+Start:       Wed Oct 16 12:47:30 EDT 2019
+End:         Wed Oct 16 12:47:37 EDT 2019
+Trinity   7 seconds
+  Inchworm (phase 1 - read clustering)  0 seconds
+  Chrysalis (phase 1 - read clustering) 7 seconds
+  Rest (phase 2 - parallel assembly)       0 seconds

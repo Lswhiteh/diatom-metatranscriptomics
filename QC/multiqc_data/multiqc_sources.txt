@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	sample_2_R1	/pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Reads/Samp_2/sample_2_R1_fastqc.zip
+FastQC	all_sections	sample_1_R1	/pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Reads/Samp_1/sample_1_R1_fastqc.zip
+FastQC	all_sections	sample_1_R2	/pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Reads/Samp_1/sample_1_R2_fastqc.zip
+FastQC	all_sections	sample_2_R2	/pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Reads/Samp_2/sample_2_R2_fastqc.zip

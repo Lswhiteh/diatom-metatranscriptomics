@@ -13,7 +13,7 @@
 
 source activate metagenomics
 
-cd /pine/scr/l/s/lswhiteh/p_line/LineP2015/2019_analysis/data
+cd /pine/scr/l/s/lswhiteh/diatom-metatranscriptomics/Assembly/trinity_assembly
 
-cd-hit-est -i 2015_assembly.fasta -o clustered_2015_assembly.fa -c 0.99 -n 10 -d 100 -M 400000 -T 12
+cd-hit-est -i Trinity.fasta -o clustered_assembly.fa -c 0.98 -n 10 -d 100 -M 400000 -T 12
 

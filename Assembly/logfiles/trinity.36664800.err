@@ -1,0 +1,9 @@
+/var/spool/slurmd/job36664800/slurm_script: line 13: cd: /pine/scr/l/s/lswhiteh/p_line/LineP2015/2019_analysis/fastqs: No such file or directory
+     Genome indexes for use with BOWTIE are available
+       in /proj/seq/data .
+     bwa/bowtie/bowtie2 indexes are located in Sequence directory
+       under the top level genome directory with name in CAPS, e.g. MM9_UCSC
+     Genome indexes for use with BOWTIE2 are available
+       in /proj/seq/data .
+     bwa/bowtie/bowtie2 indexes are located in "Sequence" directory
+       under the top level genome directory with name in CAPS, e.g. MM9_UCSC
