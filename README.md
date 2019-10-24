@@ -264,3 +264,4 @@ This creates directories with transcript abundances for each sample that can be 
 
 ## 6. Differential Expression Analysis
 
+http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#input-data
