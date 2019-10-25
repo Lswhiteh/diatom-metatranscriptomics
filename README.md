@@ -4,6 +4,8 @@ This is a step-by-step walkthrough for the RNAseq workflow developed for the Mar
 
 ## 1. Introduction
 
+Before this starts, I should mention that this is only for situations in which there are no metagenomic samples taken simultaneously with the metatranscriptome samples. If genomic reads are available do genome assembly and map to that.
+
 Diatoms are poorly annotated, but the amount of environmental RNAseq data is increasing in both marine and other relevant environments. It is possible, though harder, to make use of this data without having well-annotated reference genomes/transcriptomes with some computational tools and experimental assumptions. 
 
 Most importantly: from an experimental standpoint it is assumed that without an organisms reference genome/transcriptome the most we can do is annotate contigs and regions using the algorithms built for transcriptome assembly. In other words, nobody has validated the quality of metatranscriptome assemblies using transcriptome assemblers, and they're not explicitly built for that.
